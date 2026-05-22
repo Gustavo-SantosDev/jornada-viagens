@@ -4,6 +4,8 @@ header{
     justify-content: space-between;
     align-items: flex-start;
 
+    position: relative;
+
     background-color: var(--background-tertiary-color);
 
     padding: 38px 48px;
@@ -21,8 +23,31 @@ header{
 
 input[type="checkbox"]:checked ~ nav{
     display: block;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background-color: var(--background-tertiary-color);
 }
 
 nav{
     display: none;
+}
+
+.links-li{
+    list-style: none;
+    font-weight: var(--menu-text-weight);
+    margin-left: 50px;
+}
+
+.links-li li{
+    margin: 16px 0;
+}
+
+.links-li li a{
+    color: var(--text-secondary-color);
+    text-decoration: none;
 }
